@@ -1,17 +1,15 @@
 import React from "react";
 import logoImg from "../../Assets/Images/logo.png";
-import "./Styles.css"; 
+import "./styles.css"; 
 
-class Navbar extends React.Component {
+export class Navbar extends React.Component {
     render() {
         return (
             <header>
                 <nav id="navbar">
                   <div className="nav-brand">
-                  <img src={logoImg} alt="Logo" style={{ width: "100px", height: "auto" }} />
-            
-                     
-                     <h1>Space Flight News</h1>
+                  <img src={ logoImg } alt="Logo" style={{ width: "100px", height: "auto" }} />
+                    <h1>Space Flight News</h1>
                   </div>
                   <ul className="nav-list">
                     <li><a href="#">Home</a></li>
@@ -20,10 +18,8 @@ class Navbar extends React.Component {
                     <li><a href="#">About Us</a></li>
                   </ul>
                 </nav>
-                
-               </header>
+            </header>
         )
     }
 }
 
-export default Navbar;
